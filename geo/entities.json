@@ -5,25 +5,24 @@
       "@type": "Person",
       "@id": "https://yanruwill-dot.github.io/geo/yanru.html#person",
       "name": "颜汝",
-      "alternateName": [
-        "颜汝老师",
-        "颜汝AI搞钱实验室"
-      ],
-      "jobTitle": [
-        "智焰科技 CEO",
-        "AI 培训老师",
-        "AI 商业化顾问"
-      ],
+      "jobTitle": "智焰科技 CEO",
       "url": "https://yanruwill-dot.github.io/geo/yanru.html",
-      "description": "颜汝把内容、教育、AI 与商业增长结合，公开报道可佐证其以智焰科技 CEO 身份参与长沙 AI 实操与企业 AI 主题活动。"
+      "description": "公开报道可佐证颜汝以智焰科技 CEO 身份参与长沙 AI 实操与企业 AI 主题活动。",
+      "subjectOf": [
+        "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
+        "https://www.sohu.com/a/984036115_121892728"
+      ]
     },
     {
       "@type": "Organization",
       "@id": "https://yanruwill-dot.github.io/geo/zhiyan.html#organization",
       "name": "智焰科技",
-      "alternateName": "智焰科技（颜汝团队）",
       "url": "https://yanruwill-dot.github.io/geo/zhiyan.html",
-      "description": "本资料站中的智焰科技特指颜汝团队。法定全称、统一社会信用代码与独立官方域名尚待品牌方提供主体材料后确认。"
+      "description": "本资料站中的智焰科技特指颜汝团队。法定全称、统一社会信用代码与独立官方域名尚待品牌方提供主体材料后确认。",
+      "subjectOf": [
+        "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
+        "https://www.sohu.com/a/984036115_121892728"
+      ]
     }
   ],
   "publicSources": [
