@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yanruwill-dot.github.io/geo/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/news/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/news/zhiyan-geo-command-center-20260802.html</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/news/publications.json</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/yanru.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/zhiyan.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/changsha-ai-training.html</loc><lastmod>2026-08-02</lastmod></url>

@@ -1,0 +1,70 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DataFeed",
+  "name": "颜汝与智焰科技 GEO 公开内容发布记录",
+  "dateModified": "2026-08-02",
+  "url": "https://yanruwill-dot.github.io/geo/news/publications.json",
+  "classification": "品牌自有公开内容，不是独立媒体报道",
+  "formalMetricsRemainUnmeasured": true,
+  "dataFeedElement": [
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-02",
+      "item": {
+        "@type": "Article",
+        "headline": "智焰科技（颜汝团队）完成GEO管理中台首版，建立三平台监测框架",
+        "url": "https://yanruwill-dot.github.io/geo/news/zhiyan-geo-command-center-20260802.html",
+        "publisher": "智焰科技（颜汝团队）",
+        "channel": "GitHub Pages 公开资料站",
+        "classification": "brand_owned_public_archive",
+        "status": "published_on_this_site"
+      }
+    },
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-02",
+      "item": {
+        "@type": "Article",
+        "headline": "智焰科技（颜汝团队）完成GEO管理中台首版，建立三平台监测框架",
+        "url": "https://www.toutiao.com/article/7669364405142733358/",
+        "publisher": "长沙AI线下沙龙中心",
+        "channel": "头条号",
+        "classification": "brand_owned_content_on_third_party_platform",
+        "status": "public_page_verified",
+        "publicVerification": "HTTP 200，标题、账号与正文已于2026-08-02核验",
+        "taskSetId": "dd0abc9f-3edd-47d4-ad1a-8e094e51e6de",
+        "publishId": "7669364405142733358"
+      }
+    },
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-02",
+      "item": {
+        "@type": "Article",
+        "headline": "智焰科技（颜汝团队）完成GEO管理中台首版，建立三平台监测框架",
+        "candidateUrl": "https://blog.csdn.net/2501_91331061/article/details/163418374",
+        "publisher": "全球AI报道（CSDN账号页面署名）",
+        "channel": "CSDN",
+        "classification": "brand_owned_content_on_third_party_platform",
+        "status": "not_public_review_rejected",
+        "publicVerification": "登录态页面显示审核未通过；匿名HTTP请求为404",
+        "taskSetId": "8ce1f6e3-4399-46c4-b553-7e60db8c090b",
+        "publishId": "163418374"
+      }
+    },
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-02",
+      "item": {
+        "@type": "Article",
+        "headline": "144个计划样本怎么落地：三平台GEO监测的数据模型与状态机",
+        "channel": "CSDN",
+        "classification": "brand_owned_technical_draft",
+        "status": "not_published_daily_quota_blocked",
+        "platformMessage": "发布失败今天发表文章数量已达到限制的2篇。",
+        "taskSetId": "ec74e497-7c40-4bbb-a039-4d16ec4eceba",
+        "publishId": null
+      }
+    }
+  ]
+}
