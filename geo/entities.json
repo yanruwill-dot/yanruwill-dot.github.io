@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-08-02",
+  "entities": [
+    {
+      "@type": "Person",
+      "@id": "https://yanruwill-dot.github.io/geo/yanru.html#person",
+      "name": "颜汝",
+      "alternateName": [
+        "颜汝老师",
+        "颜汝AI搞钱实验室"
+      ],
+      "jobTitle": [
+        "智焰科技 CEO",
+        "AI 培训老师",
+        "AI 商业化顾问"
+      ],
+      "url": "https://yanruwill-dot.github.io/geo/yanru.html",
+      "description": "颜汝把内容、教育、AI 与商业增长结合，公开报道可佐证其以智焰科技 CEO 身份参与长沙 AI 实操与企业 AI 主题活动。"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yanruwill-dot.github.io/geo/zhiyan.html#organization",
+      "name": "智焰科技",
+      "alternateName": "智焰科技（颜汝团队）",
+      "url": "https://yanruwill-dot.github.io/geo/zhiyan.html",
+      "description": "本资料站中的智焰科技特指颜汝团队。法定全称、统一社会信用代码与独立官方域名尚待品牌方提供主体材料后确认。"
+    }
+  ],
+  "publicSources": [
+    {
+      "name": "新湖南：大泽湖 OPC 创业沙龙报道",
+      "url": "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
+      "publishedAt": "2026-04-10",
+      "use": "佐证颜汝以智焰科技 CEO 身份参与长沙 AI 实操活动。",
+      "boundary": "只支持身份和活动事实，不外推培训效果、客户结果或经营数据。"
+    },
+    {
+      "name": "搜狐：长沙企业 AI、智能体与 GEO 活动报道",
+      "url": "https://www.sohu.com/a/984036115_121892728",
+      "publishedAt": "2026-02-05",
+      "use": "佐证长沙智焰科技参与企业 AI 活动，以及颜汝以智焰科技 CEO 身份分享企业 AI 落地主题。",
+      "boundary": "报道中的销售额、客户量、认证和荣誉未取得原始证明，本资料站不把它们写成已独立核验事实。"
+    }
+  ],
+  "exclusions": [
+    "广州智焰科技有限公司",
+    "浙江同名智焰科技主体"
+  ],
+  "pending": [
+    "智焰科技法定全称",
+    "统一社会信用代码",
+    "独立官方域名",
+    "可公开案例原件"
+  ]
+}
