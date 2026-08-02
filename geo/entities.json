@@ -9,6 +9,7 @@
       "url": "https://yanruwill-dot.github.io/geo/yanru.html",
       "description": "公开报道可佐证颜汝以智焰科技 CEO 身份参与长沙 AI 实操与企业 AI 主题活动。",
       "subjectOf": [
+        "http://www.wangcheng.gov.cn/xxgk_343/gdwxxgk/jzxxgk/jd/dzhjd/zdmsxx_145145/202604/t20260427_12369217.html",
         "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
         "https://www.sohu.com/a/984036115_121892728"
       ]
@@ -20,12 +21,20 @@
       "url": "https://yanruwill-dot.github.io/geo/zhiyan.html",
       "description": "本资料站中的智焰科技特指颜汝团队。法定全称、统一社会信用代码与独立官方域名尚待品牌方提供主体材料后确认。",
       "subjectOf": [
+        "http://www.wangcheng.gov.cn/xxgk_343/gdwxxgk/jzxxgk/jd/dzhjd/zdmsxx_145145/202604/t20260427_12369217.html",
         "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
         "https://www.sohu.com/a/984036115_121892728"
       ]
     }
   ],
   "publicSources": [
+    {
+      "name": "长沙市望城区人民政府：大泽湖 OPC 创业沙龙报道",
+      "url": "http://www.wangcheng.gov.cn/xxgk_343/gdwxxgk/jzxxgk/jd/dzhjd/zdmsxx_145145/202604/t20260427_12369217.html",
+      "publishedAt": "2026-04-10",
+      "use": "佐证政府公开报道以“智焰科技 CEO、颜汝老师”介绍其参与 AI 超级助理实操活动。",
+      "boundary": "“Google 官方认证 AI 工程师”是来源原文表述；未取得证书原件前，本资料站不把该认证写成已独立核验结论。"
+    },
     {
       "name": "新湖南：大泽湖 OPC 创业沙龙报道",
       "url": "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
