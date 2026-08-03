@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">蓝色 AI</title>
+  <defs>
+    <linearGradient id="blue" x1="18" y1="10" x2="110" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2387ff"/>
+      <stop offset="1" stop-color="#0648df"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="url(#blue)"/>
+  <path d="M25 92 47 35h16l22 57H70l-4-12H44l-4 12H25Zm23-25h14l-7-20-7 20Z" fill="#fff"/>
+  <path d="M91 35h14v57H91z" fill="#fff"/>
+  <circle cx="104" cy="24" r="6" fill="#8fd2ff"/>
+</svg>
