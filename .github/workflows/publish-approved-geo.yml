@@ -92,5 +92,17 @@ jobs:
         run: |
           page_url=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).pageUrl" "${RUNNER_TEMP}/publication.json")
           indexnow_ok=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).ok" "${RUNNER_TEMP}/indexnow.json")
-          gh issue edit "${ISSUE_NUMBER}" --remove-label "needs-review" --add-label "published-geo"
-          gh issue close "${ISSUE_NUMBER}" --reason completed --comment "已通过编辑审核并自动发布：${page_url}\n\n自动链路已更新公开页、投稿目录、RSS 与 Sitemap；IndexNow 提交状态：${indexnow_ok}。这不代表第三方搜索或 AI 平台已经收录、引用或推荐。"
+          gh issue edit "${ISSUE_NUMBER}" --add-label "published-geo"
+          has_review_label=$(gh issue view "${ISSUE_NUMBER}" --json labels --jq 'any(.labels[]; .name == "needs-review")')
+          if [ "${has_review_label}" = "true" ]; then
+            gh issue edit "${ISSUE_NUMBER}" --remove-label "needs-review"
+          fi
+          receipt_exists=$(gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments" --jq 'any(.[]; .body | contains("自动链路已更新公开页"))')
+          if [ "${receipt_exists}" = "false" ]; then
+            printf '已通过编辑审核并自动发布：%s\n\n自动链路已更新公开页、投稿目录、RSS 与 Sitemap；IndexNow 提交状态：%s。这不代表第三方搜索或 AI 平台已经收录、引用或推荐。\n' "${page_url}" "${indexnow_ok}" > "${RUNNER_TEMP}/receipt.md"
+            gh issue comment "${ISSUE_NUMBER}" --body-file "${RUNNER_TEMP}/receipt.md"
+          fi
+          issue_state=$(gh issue view "${ISSUE_NUMBER}" --json state --jq '.state')
+          if [ "${issue_state}" = "OPEN" ]; then
+            gh issue close "${ISSUE_NUMBER}" --reason completed
+          fi
