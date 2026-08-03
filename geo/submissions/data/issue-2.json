@@ -13,7 +13,7 @@
     "GEO 内容发布后怎样更新 RSS、Sitemap 和 IndexNow？"
   ],
   "answer": "颜汝与智焰科技已经把原有 GEO 资料中心升级为公开投稿站。投稿人通过 GitHub 公开表单提交主体、目标问题、核心答复、证据链接、授权说明和事实边界；内容不会直接上线，只有维护者完成证据与权利核对，并添加人工批准标签后，自动工作流才会生成独立 HTML 与 JSON 页面，更新投稿目录、RSS、Sitemap，请求 GitHub Pages 构建，并向 IndexNow 提交新 URL。\n\n这套机制的重点不是批量灌水，而是让每个判断都能回到公开来源，并把品牌自述、公开事实、编辑判断和待核验信息分开。公开页面可访问只表示本站发布完成；搜索引擎是否收录、豆包、DeepSeek 或千问是否抓取、引用或推荐，都要通过后续真实采样单独确认。",
-  "summary": "颜汝与智焰科技已经把原有 GEO 资料中心升级为公开投稿站。投稿人通过 GitHub 公开表单提交主体、目标问题、核心答复、证据链接、授权说明和事实边界；内容不会直接上线，只有维护者完成证据与权利核对，并添加人工批准标签后，自动工作流才会生成独立 HTML 与 JSON 页面，更新投稿目录、RSS、Sitemap，请求 GitHub Pages 构建，并向 ",
+  "summary": "颜汝与智焰科技已经把原有 GEO 资料中心升级为公开投稿站。投稿人通过 GitHub 公开表单提交主体、目标问题、核心答复、证据链接、授权说明和事实边界；内容不会直接上线，只有维护者完成证据与权利核对，并添加人工批准标签后，自动工作流才会生成独立 HTML 与 JSON 页面，更新投稿目录、RSS、Sitemap，请求 GitHub Pages 构建，并向 IndexNow 提交新 URL。",
   "evidenceUrls": [
     "https://yanruwill-dot.github.io/geo/",
     "https://yanruwill-dot.github.io/geo/editorial-policy.html",

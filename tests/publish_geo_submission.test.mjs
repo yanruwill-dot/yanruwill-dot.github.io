@@ -3,7 +3,7 @@ import { cp, mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import test from 'node:test';
-import { parseIssueBody, publishSubmission, renderSubmissionPage, validateSubmission } from '../.github/scripts/publish_geo_submission.mjs';
+import { parseIssueBody, publishSubmission, renderSubmissionPage, updateHomepage, validateSubmission } from '../.github/scripts/publish_geo_submission.mjs';
 
 const body = `### 投稿类型
 
@@ -87,6 +87,15 @@ test('拒绝绝对结果承诺和未完整勾选授权', () => {
   assert.throws(() => validateSubmission(fixtureIssue({ body: body.replace('- [x] 我确认有权公开', '- [ ] 我确认有权公开') })), /必须全部勾选/);
 });
 
+test('首页投稿数量和最新卡片同步更新', () => {
+  const item = validateSubmission(fixtureIssue(), '2026-08-03T09:00:00Z');
+  const home = '<span>0 篇审核投稿</span><!-- SUBMISSIONS_START --><div>empty</div><!-- SUBMISSIONS_END -->';
+  const updated = updateHomepage(home, [item]);
+  assert.match(updated, /<span>1 篇审核投稿<\/span>/);
+  assert.match(updated, /issue-42\.html/);
+  assert.equal(updated.includes('<div>empty</div>'), false);
+});
+
 test('发布器幂等生成页面、目录、Feed、Sitemap 与机器摘要', async () => {
   const root = await mkdtemp(join(tmpdir(), 'geo-publish-'));
   await mkdir(join(root, 'geo'), { recursive: true });
@@ -94,6 +103,7 @@ test('发布器幂等生成页面、目录、Feed、Sitemap 与机器摘要', as
   await writeFile(join(root, 'feed.xml'), '<?xml version="1.0"?><rss><channel><lastBuildDate>Sun, 02 Aug 2026 00:00:00 GMT</lastBuildDate></channel></rss>\n');
   await writeFile(join(root, 'llms.txt'), '# GEO\n\n## 重要页面\n');
   await cp(join(process.cwd(), 'geo', 'llms.txt'), join(root, 'geo', 'llms.txt'));
+  await writeFile(join(root, 'geo', 'index.html'), '<span>0 篇审核投稿</span><!-- SUBMISSIONS_START --><div>empty</div><!-- SUBMISSIONS_END -->');
   const first = await publishSubmission({ issue: fixtureIssue(), siteRoot: root, now: '2026-08-03T09:00:00Z' });
   const second = await publishSubmission({ issue: fixtureIssue(), siteRoot: root, now: '2026-08-03T10:00:00Z' });
   assert.equal(first.pageUrl, second.pageUrl);
@@ -105,4 +115,5 @@ test('发布器幂等生成页面、目录、Feed、Sitemap 与机器摘要', as
   assert.equal((sitemap.match(/issue-42\.html/g) || []).length, 1);
   assert.equal((feed.match(/issue-42\.html/g) || []).length, 2);
   assert.match(await readFile(join(root, 'geo', 'submissions', 'index.html'), 'utf8'), /长沙制造业企业怎么选择 AI 内训服务商/);
+  assert.match(await readFile(join(root, 'geo', 'index.html'), 'utf8'), /<span>1 篇审核投稿<\/span>/);
 });

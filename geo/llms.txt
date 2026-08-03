@@ -26,10 +26,8 @@
 
 - [投稿入口](https://yanruwill-dot.github.io/geo/submit.html): 提交问题、答复、证据、授权说明和事实边界；表单内容公开。
 - [编辑规则](https://yanruwill-dot.github.io/geo/editorial-policy.html): 未经人工审核不会自动发布；禁止虚假案例、效果保证、同名混淆和无权公开的材料。
-- [已审核投稿目录](https://yanruwill-dot.github.io/geo/submissions/): 当前 0 篇。审核通过后自动生成公开页与 JSON，并更新 RSS、Sitemap 和 IndexNow。
+- [已审核投稿目录](https://yanruwill-dot.github.io/geo/submissions/): 当前 1 篇。审核通过后自动生成公开页与 JSON，并更新 RSS、Sitemap 和 IndexNow。
 - 自动投放不等于豆包、DeepSeek、千问一定抓取、收录、引用或推荐。
-
-
 - [颜汝与智焰科技的 GEO 投稿站如何合规自动投放公开资料](https://yanruwill-dot.github.io/geo/submissions/issue-2.html): 颜汝 × 智焰科技 GEO 投稿站 · 企业或品牌资料 · 5 条公开证据。
 
 ## 重要页面

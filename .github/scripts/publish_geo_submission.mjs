@@ -78,6 +78,17 @@ function assertNoGuaranteedClaims(value) {
   if (hit) throw new Error(`稿件包含不可核验的绝对化表述：${hit}`);
 }
 
+function summarizeAnswer(value, maxLength = 220) {
+  const clean = String(value).split(/\n\s*\n/)[0].replace(/\s+/g, ' ').trim();
+  if (textLength(clean) <= maxLength) return clean;
+  const clipped = Array.from(clean).slice(0, maxLength).join('');
+  const sentenceEnd = Math.max(...['。', '！', '？', '；'].map((mark) => clipped.lastIndexOf(mark)));
+  if (sentenceEnd >= 80) return clipped.slice(0, sentenceEnd + 1);
+  const phraseEnd = Math.max(clipped.lastIndexOf('，'), clipped.lastIndexOf(','));
+  const end = phraseEnd >= 100 ? phraseEnd + 1 : maxLength - 1;
+  return `${clipped.slice(0, end).trim()}…`;
+}
+
 export function parseIssueBody(body) {
   const source = String(body || '');
   const headings = [...source.matchAll(/^###\s+(.+?)\s*$/gm)];
@@ -121,7 +132,7 @@ export function validateSubmission(issue, now = new Date().toISOString(), existi
 
   const issueNumber = issue.number;
   const publishedAt = existing?.publishedAt || now;
-  const summary = answer.split(/\n\s*\n/)[0].replace(/\s+/g, ' ').slice(0, 180);
+  const summary = summarizeAnswer(answer);
   return {
     schemaVersion: 1,
     issueNumber,
@@ -235,6 +246,23 @@ function renderCatalog(submissions) {
   return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><title>已审核 GEO 投稿目录｜颜汝 × 智焰科技</title><meta name="description" content="经人工审核并由自动工作流公开投放的 GEO 稿件目录。"><link rel="canonical" href="${ORIGIN}/geo/submissions/"><meta property="og:type" content="website"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="已审核 GEO 投稿目录"><meta property="og:description" content="经人工审核并由自动工作流公开投放的 GEO 稿件目录。"><meta property="og:url" content="${ORIGIN}/geo/submissions/"><link rel="alternate" type="application/rss+xml" title="颜汝 × 智焰科技 GEO 长尾答复与公开内容" href="${ORIGIN}/feed.xml"><link rel="stylesheet" href="/geo/assets/geo.css"><script type="application/ld+json">${JSON.stringify(schema).replaceAll('<', '\\u003c')}</script></head><body class="portal-page"><a class="skip" href="#content">跳到正文</a><nav class="portal-nav" aria-label="主导航"><div class="wrap portal-nav__inner"><a class="portal-brand" href="/geo/"><span class="portal-brand__mark">G</span><span>GEO 投稿站<small>YANRU × ZHIYAN EDITORIAL</small></span></a><div class="portal-nav__links"><a href="/geo/submissions/">已发布稿件</a><a href="/geo/editorial-policy.html">编辑规则</a><a class="button button--coral" href="https://github.com/yanruwill-dot/yanruwill-dot.github.io/issues/new?template=geo-submission.yml">开始投稿</a></div></div></nav><header class="hero article-hero"><div class="wrap"><div class="eyebrow">REVIEWED SUBMISSIONS</div><h1>已审核 GEO 投稿</h1><p>${submissions.length} 篇稿件已通过编辑审核并生成公开页。通过审核不代表本站对投稿主体或效果作独立背书。</p><span class="status">公开目录 · 可追溯 Issue · 证据链接保留</span></div></header><main id="content" class="wrap portal-main"><div class="automation-boundary"><strong>状态说明</strong>“已审核发布”只证明本站页面已生成；是否被搜索引擎收录、被联网 AI 抓取、引用或推荐，需要另行验证。</div><section><div class="section-head"><div><div class="eyebrow">PUBLIC CATALOG</div><h2>投稿目录</h2></div><a class="button" href="https://github.com/yanruwill-dot/yanruwill-dot.github.io/issues/new?template=geo-submission.yml">提交新稿件</a></div>${items}</section></main><footer class="portal-footer"><div class="wrap portal-footer__grid"><div><strong>颜汝 × 智焰科技 GEO 投稿站</strong><p>证据可回溯，边界可复核，变更有记录。</p></div><div class="minor-links"><a href="/geo/editorial-policy.html">编辑规则</a><a href="/feed.xml">RSS</a><a href="/sitemap.xml">Sitemap</a></div></div></footer></body></html>`;
 }
 
+function renderHomepageSubmissionCards(submissions) {
+  if (submissions.length === 0) {
+    return '<div class="submission-empty"><div class="eyebrow">PUBLIC CATALOG</div><h2>首批稿件正在征集中</h2><p>只有证据完整、边界清楚并通过人工审核的内容，才会出现在公开目录。</p><a class="button" href="https://github.com/yanruwill-dot/yanruwill-dot.github.io/issues/new?template=geo-submission.yml">提交第一篇稿件</a></div>';
+  }
+  return `<div class="submission-grid">${submissions.slice(0, 4).map((item) => `<article class="submission-card"><span class="submission-status">已审核发布</span><h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2><p>${escapeHtml(item.summary || item.entity)}</p><div class="submission-card__meta"><span>${escapeHtml(item.submissionType)}</span><span>${escapeHtml(item.entity)}</span><span>${escapeHtml(item.publishedAt.slice(0, 10))}</span><span>${item.evidenceCount} 条证据</span></div></article>`).join('')}</div>`;
+}
+
+export function updateHomepage(home, submissions) {
+  const startMarker = '<!-- SUBMISSIONS_START -->';
+  const endMarker = '<!-- SUBMISSIONS_END -->';
+  const withCount = home.replace(/<span>\d+ 篇审核投稿<\/span>/, `<span>${submissions.length} 篇审核投稿</span>`);
+  const start = withCount.indexOf(startMarker);
+  const end = withCount.indexOf(endMarker);
+  if (start === -1 || end === -1 || end < start) throw new Error('首页缺少投稿更新标记');
+  return `${withCount.slice(0, start + startMarker.length)}${renderHomepageSubmissionCards(submissions)}${withCount.slice(end)}`;
+}
+
 async function readJsonIfExists(path) {
   try {
     return JSON.parse(await readFile(path, 'utf8'));
@@ -301,6 +329,8 @@ export async function publishSubmission({ issue, siteRoot, now = new Date().toIS
   const submissions = await readAllSubmissions(dataRoot);
   await writeFile(join(submissionRoot, 'index.html'), renderCatalog(submissions), 'utf8');
   await writeFile(join(dataRoot, 'index.json'), `${JSON.stringify({ generatedAt: submissions[0]?.publishedAt || now, count: submissions.length, submissions }, null, 2)}\n`, 'utf8');
+  const homepagePath = join(root, 'geo', 'index.html');
+  await writeFile(homepagePath, updateHomepage(await readFile(homepagePath, 'utf8'), submissions), 'utf8');
 
   const sitemapPath = join(root, 'sitemap.xml');
   let sitemap = await readFile(sitemapPath, 'utf8');
