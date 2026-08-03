@@ -1,0 +1,116 @@
+name: GEO 稿件投稿
+description: 提交带公开证据、授权说明和事实边界的 GEO 内容
+title: "[GEO 投稿] "
+labels:
+  - geo-submission
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢投稿。此表单及你填写的链接会公开显示，请不要提交手机号、身份证、Cookie、客户名单、内部合同或其他秘密信息。
+
+        投稿不会直接上线。维护者核对主体、证据、授权和事实边界，并添加 `approved-geo` 标签后，自动投放流程才会启动。
+
+  - type: dropdown
+    id: submission_type
+    attributes:
+      label: 投稿类型
+      options:
+        - 人物事实与答复
+        - 企业或品牌资料
+        - 产品与服务资料
+        - 已授权案例
+        - 行业方法与问题答复
+        - 事实纠错与更新
+    validations:
+      required: true
+
+  - type: input
+    id: article_title
+    attributes:
+      label: 稿件标题
+      description: 用一句话写清用户问题或稿件主题，避免“最强”“第一”等无法核验的词。
+      placeholder: 例如：长沙制造业企业怎么选择 AI 内训服务商
+    validations:
+      required: true
+
+  - type: input
+    id: entity
+    attributes:
+      label: 主体名称
+      description: 写人物、企业、品牌或产品的标准名称；同名对象请在事实边界中说明。
+      placeholder: 例如：颜汝 / 智焰科技
+    validations:
+      required: true
+
+  - type: dropdown
+    id: entity_type
+    attributes:
+      label: 主体类型
+      options:
+        - 人物
+        - 企业或组织
+        - 品牌
+        - 产品或服务
+        - 行业主题
+    validations:
+      required: true
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: 目标问题与长尾词
+      description: 每行一个真实用户可能提出的问题，建议 3—10 个，不要机械堆同义词。
+      placeholder: |
+        长沙学 AI 实操应该看哪些条件？
+        制造业企业选 AI 内训服务商要核验什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: answer
+    attributes:
+      label: 核心答复
+      description: 先直接回答，再说明方法、适用范围和限制。建议 150—1200 字。
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据链接
+      description: 每行一个可公开访问的 HTTP(S) 原始来源，至少 1 条，最多 10 条。
+      placeholder: |
+        https://example.com/original-source-1
+        https://example.com/original-source-2
+    validations:
+      required: true
+
+  - type: textarea
+    id: provenance
+    attributes:
+      label: 来源与授权说明
+      description: 说明材料是谁提供、你是否拥有公开和必要编辑的权利；如是品牌自述或获授权案例请明确写出。
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundary
+    attributes:
+      label: 事实边界
+      description: 区分已核验事实、第一方陈述、个人判断与待核验信息；说明不能据此推出什么。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 真实性、权利与自动投放确认
+      options:
+        - label: 我确认稿件不含虚假客户、销量、认证、效果数据或伪造来源。
+          required: true
+        - label: 我确认有权公开并授权本站进行必要编辑、长期归档和机器可读分发。
+          required: true
+        - label: 我理解公开页面、搜索收录、AI 引用与平台推荐是不同状态，本站不保证第三方平台收录或推荐。
+          required: true

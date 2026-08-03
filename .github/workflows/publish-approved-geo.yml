@@ -1,0 +1,96 @@
+name: 发布审核通过的 GEO 投稿
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 已添加 approved-geo 标签的 Issue 编号
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+
+concurrency:
+  group: geo-submission-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'approved-geo'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+    steps:
+      - name: 检出 main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: 读取公开 Issue
+        run: gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}" > "${RUNNER_TEMP}/issue.json"
+
+      - name: 运行投稿发布测试
+        run: node --test tests/publish_geo_submission.test.mjs
+
+      - name: 生成页面与机器入口
+        run: node .github/scripts/publish_geo_submission.mjs --issue-file "${RUNNER_TEMP}/issue.json" --site-root . > "${RUNNER_TEMP}/publication.json"
+
+      - name: 检查并提交发布产物
+        id: commit
+        run: |
+          git diff --check
+          git add geo/submissions sitemap.xml feed.xml llms.txt geo/llms.txt
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "${GITHUB_OUTPUT}"
+          else
+            git config user.name "geo-publish-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "publish: GEO submission #${ISSUE_NUMBER}"
+            git push origin HEAD:main
+            echo "changed=true" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: 请求 GitHub Pages 构建
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds" > "${RUNNER_TEMP}/pages-build.json"
+
+      - name: 等待 Pages 构建完成
+        run: |
+          build_url=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).url" "${RUNNER_TEMP}/pages-build.json")
+          for attempt in $(seq 1 30); do
+            status=$(gh api "${build_url}" --jq '.status')
+            if [ "${status}" = "built" ]; then
+              exit 0
+            fi
+            if [ "${status}" = "errored" ]; then
+              exit 1
+            fi
+            sleep 10
+          done
+          exit 1
+
+      - name: 核验公开页面
+        run: |
+          page_url=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).pageUrl" "${RUNNER_TEMP}/publication.json")
+          curl --fail --location --retry 12 --retry-delay 5 --retry-all-errors "${page_url}" > /dev/null
+
+      - name: 提交 IndexNow
+        run: node .github/scripts/submit_indexnow.mjs --result-file "${RUNNER_TEMP}/publication.json" --output "${RUNNER_TEMP}/indexnow.json"
+
+      - name: 标记已发布并记录回执
+        run: |
+          page_url=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).pageUrl" "${RUNNER_TEMP}/publication.json")
+          indexnow_ok=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).ok" "${RUNNER_TEMP}/indexnow.json")
+          gh issue edit "${ISSUE_NUMBER}" --remove-label "needs-review" --add-label "published-geo"
+          gh issue close "${ISSUE_NUMBER}" --reason completed --comment "已通过编辑审核并自动发布：${page_url}\n\n自动链路已更新公开页、投稿目录、RSS 与 Sitemap；IndexNow 提交状态：${indexnow_ok}。这不代表第三方搜索或 AI 平台已经收录、引用或推荐。"

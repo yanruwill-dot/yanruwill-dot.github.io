@@ -22,6 +22,14 @@
 - [机器可读发布状态](https://yanruwill-dot.github.io/geo/news/publications.json): 头条公开页已核验；CSDN 动态稿审核未通过，技术稿受当日额度限制，二者均不计公开。
 - 上述文章由品牌方自行发布，不属于独立媒体报道。公开可访问、搜索引擎收录和 AI 引用是三个不同状态。
 
+## GEO 投稿与自动投放
+
+- [投稿入口](https://yanruwill-dot.github.io/geo/submit.html): 提交问题、答复、证据、授权说明和事实边界；表单内容公开。
+- [编辑规则](https://yanruwill-dot.github.io/geo/editorial-policy.html): 未经人工审核不会自动发布；禁止虚假案例、效果保证、同名混淆和无权公开的材料。
+- [已审核投稿目录](https://yanruwill-dot.github.io/geo/submissions/): 当前 0 篇。审核通过后自动生成公开页与 JSON，并更新 RSS、Sitemap 和 IndexNow。
+- 自动投放不等于豆包、DeepSeek、千问一定抓取、收录、引用或推荐。
+
+
 ## 重要页面
 
 - [颜汝事实页](https://yanruwill-dot.github.io/geo/yanru.html)
