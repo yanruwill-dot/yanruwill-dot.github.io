@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('.method-item');
+const items = document.querySelectorAll('.solution-item');
 const word = document.querySelector('#word');
 items.forEach(item => item.addEventListener('click', () => {
   items.forEach(other => other.classList.remove('active'));
@@ -8,4 +8,4 @@ items.forEach(item => item.addEventListener('click', () => {
 const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   if (entry.isIntersecting) entry.target.classList.add('in-view');
 }), { threshold: .12 });
-document.querySelectorAll('section, .service-grid article, .field-grid figure').forEach(el => observer.observe(el));
+document.querySelectorAll('section, .story-card, .news-list a').forEach(el => observer.observe(el));
