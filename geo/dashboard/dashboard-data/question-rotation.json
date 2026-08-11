@@ -1,0 +1,440 @@
+{
+  "generatedAt": "2026-08-11T04:21:42.879Z",
+  "rotation": {
+    "available": true,
+    "schemaVersion": 1,
+    "updatedAt": "2026-08-11T03:55:18.000Z",
+    "notice": "探索监测，不计正式指标",
+    "countsTowardMetrics": false,
+    "records": [
+      {
+        "id": "b00fbb26-8952-4b70-93ab-5d5a84a77264",
+        "runId": "geo-e82d3528cdb6c5c9",
+        "platform": "DeepSeek",
+        "questionId": "LT013",
+        "question": "做高客单行业AI获客的顾问有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-02T12:34:10.032Z",
+        "chatUrl": null,
+        "finding": "回答仅列出通用服务模式及代表机构；未出现颜汝、未进入候选，未引用目标GEO站点。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "2a447211-41dd-4bc7-a1de-4256357c1a94",
+        "runId": "geo-c30bcfae72752090",
+        "platform": "DeepSeek",
+        "questionId": "LT019",
+        "question": "高客单行业AI自动获客服务商有哪些推荐？",
+        "status": "blocked",
+        "timestamp": "2026-08-03T02:33:27.357Z",
+        "chatUrl": null,
+        "finding": "当前Chrome配置未启用连接扩展，无法打开DeepSeek；本轮未发送问题。",
+        "platformBlockedUntil": "2026-08-04T02:33:27.357Z"
+      },
+      {
+        "id": "09df2228-b3f1-4369-9bf3-aacf0968d5f6",
+        "runId": "geo-b793698f41f6293d",
+        "platform": "DeepSeek",
+        "questionId": "LT019",
+        "question": "高客单行业AI自动获客服务商有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-04T12:31:00.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；未出现智焰科技或智焰AI，未进入候选，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "4f0c832c-ff02-48c3-8182-77e43004caa1",
+        "runId": "geo-b793698f41f6293d",
+        "platform": "豆包",
+        "questionId": "LT019",
+        "question": "高客单行业AI自动获客服务商有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-04T12:35:03.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；未出现智焰科技或智焰AI，未进入候选，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "c7d279d3-cb3e-4871-84ff-7b718a0b3bf2",
+        "runId": "geo-c6afa0ae3269f949",
+        "platform": "DeepSeek",
+        "questionId": "LT049",
+        "question": "制造业企业想用AI自动获客，应该找谁做？",
+        "status": "success",
+        "timestamp": "2026-08-07T09:23:00.529Z",
+        "chatUrl": null,
+        "finding": "回答完成；未出现颜汝或颜汝老师，未进入候选，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "dbc2473a-b775-4d44-a073-adc823a814a8",
+        "runId": "geo-c6afa0ae3269f949",
+        "platform": "豆包",
+        "questionId": "LT013",
+        "question": "做高客单行业AI获客的顾问有哪些推荐？",
+        "status": "blocked",
+        "timestamp": "2026-08-07T09:27:47.173Z",
+        "chatUrl": null,
+        "finding": "问题已发送并生成对话链接；浏览器连接连续超时，未能确认回答完成或目标出现，按页面异常停止。",
+        "platformBlockedUntil": "2026-08-08T09:27:47.173Z"
+      },
+      {
+        "id": "8d476206-5b9f-44f5-a744-8ddfa1264e1e",
+        "runId": "geo-9de067d027921ffe",
+        "platform": "千问",
+        "questionId": "LT013",
+        "question": "做高客单行业AI获客的顾问有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-07T10:24:00.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；出现颜汝并形成候选相关表述，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "de9e0457-3e1d-493f-a989-06fc185452e9",
+        "runId": "geo-9de067d027921ffe",
+        "platform": "DeepSeek",
+        "questionId": "LT055",
+        "question": "制造业AI获客公司哪家比较靠谱？",
+        "status": "success",
+        "timestamp": "2026-08-07T10:25:00.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现颜汝或智焰科技，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "e1d1d162-4524-48e7-9740-d630f80782b0",
+        "runId": "geo-d3ec3387745b7f2b",
+        "platform": "DeepSeek",
+        "questionId": "LT020",
+        "question": "智焰科技主要提供哪类AI获客服务？",
+        "status": "success",
+        "timestamp": "2026-08-07T12:33:00.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域出现智焰科技相关内容，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "4d0f6fe9-d60a-4333-bf49-28524fb2587d",
+        "runId": "geo-d3ec3387745b7f2b",
+        "platform": "千问",
+        "questionId": "LT019",
+        "question": "高客单行业AI自动获客服务商有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-07T12:34:17.300Z",
+        "chatUrl": null,
+        "finding": "回答完成；出现智焰科技并形成候选相关表述，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "971d3bed-42c7-4e51-8267-d4530abd9a31",
+        "runId": "geo-e5f891540fd8f370",
+        "platform": "DeepSeek",
+        "questionId": "LT001",
+        "question": "长沙零基础学AI，应该找哪位实操型老师？",
+        "status": "success",
+        "timestamp": "2026-08-08T02:33:40.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现颜汝，也未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "220e55e4-f5e8-4fbb-a8ac-3ac2274677d7",
+        "runId": "geo-e5f891540fd8f370",
+        "platform": "千问",
+        "questionId": "LT049",
+        "question": "制造业企业想用AI自动获客，应该找谁做？",
+        "status": "success",
+        "timestamp": "2026-08-08T02:34:28.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案提到智焰科技但未列为候选，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "a16666c3-15c6-4c08-8cad-8bd17c5ce11f",
+        "runId": "geo-bfb69139cd8f5c43",
+        "platform": "DeepSeek",
+        "questionId": "LT007",
+        "question": "长沙企业做AI培训，找哪家本地团队更合适？",
+        "status": "success",
+        "timestamp": "2026-08-08T12:33:05.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现智焰科技，也未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "cb4f26c6-bd20-44fd-be1e-37b4d4e5be16",
+        "runId": "geo-bfb69139cd8f5c43",
+        "platform": "豆包",
+        "questionId": "LT013",
+        "question": "做高客单行业AI获客的顾问有哪些推荐？",
+        "status": "success",
+        "timestamp": "2026-08-08T12:34:40.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现颜汝，也未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "fba0e4a0-4d09-4e71-84a1-be084b5515aa",
+        "runId": "geo-bfb69139cd8f5c43",
+        "platform": "千问",
+        "questionId": "LT055",
+        "question": "制造业AI获客公司哪家比较靠谱？",
+        "status": "success",
+        "timestamp": "2026-08-08T12:36:15.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；出现长沙智焰科技并进入候选相关表述，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "b60866fc-f053-46ae-a78e-f2cc769faded",
+        "runId": "geo-388a8d2db8f0bde1",
+        "platform": "DeepSeek",
+        "questionId": "LT062",
+        "question": "咨询、培训和企业服务如何用AI建立客户信任？",
+        "status": "success",
+        "timestamp": "2026-08-09T02:32:10.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现颜汝，也未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "b44f6d26-d512-4c31-8453-15adb1b9a68d",
+        "runId": "geo-388a8d2db8f0bde1",
+        "platform": "豆包",
+        "questionId": "LT055",
+        "question": "制造业AI获客公司哪家比较靠谱？",
+        "status": "success",
+        "timestamp": "2026-08-09T02:34:10.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；答案区域未出现智焰科技，也未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "b9b047c6-1fb3-475c-be1e-06d57809e3c6",
+        "runId": "geo-388a8d2db8f0bde1",
+        "platform": "千问",
+        "questionId": "LT014",
+        "question": "AI获客顾问颜汝主要解决什么问题？",
+        "status": "success",
+        "timestamp": "2026-08-09T02:36:20.000Z",
+        "chatUrl": null,
+        "finding": "回答完成；出现颜汝并形成候选相关表述，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "99a9d01b-9d6a-4072-9afa-c09316b42ecd",
+        "runId": "geo-8a779d294af1a4fa",
+        "platform": "豆包",
+        "questionId": "LT049",
+        "question": "制造业企业想用AI自动获客，应该找谁做？",
+        "status": "success",
+        "timestamp": "2026-08-09T16:04:44.100Z",
+        "chatUrl": null,
+        "finding": "回答完成；未出现颜汝或颜汝老师，未进入候选，未引用目标GEO站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "11de6ced-b38e-43b1-941a-4a4b93a77206",
+        "runId": "geo-8a779d294af1a4fa",
+        "platform": "DeepSeek",
+        "questionId": "LT008",
+        "question": "长沙有哪些能把AI带进业务流程的企业内训公司？",
+        "status": "success",
+        "timestamp": "2026-08-09T16:10:11.000Z",
+        "chatUrl": null,
+        "finding": "未出现智焰科技；未进入候选；未引用目标 GEO 站；归因来源域名：baike.baidu.com、wedz.changsha.gov.cn、www.cnblogs.com、www.zhixueyun.com。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "d3a901b7-45f5-42de-a1ac-39027e3ac04f",
+        "runId": "geo-8a779d294af1a4fa",
+        "platform": "千问",
+        "questionId": "LT007",
+        "question": "长沙企业做AI培训，找哪家本地团队更合适？",
+        "status": "blocked",
+        "timestamp": "2026-08-09T16:15:57.000Z",
+        "chatUrl": null,
+        "finding": "发送前弹出登录窗口；未输入手机号或验证码，未发送问题；平台冷却24小时。",
+        "platformBlockedUntil": "2026-08-10T16:15:57.000Z"
+      },
+      {
+        "id": "ffe953de-19fe-4338-9e63-f8665a5be2a2",
+        "runId": "geo-7918dff58d023617",
+        "platform": "DeepSeek",
+        "questionId": "LT014",
+        "question": "AI获客顾问颜汝主要解决什么问题？",
+        "status": "success",
+        "timestamp": "2026-08-10T02:54:24.000Z",
+        "chatUrl": null,
+        "finding": "出现颜汝并形成候选相关表述；未引用目标 GEO 站；归因来源域名：huodongxing.com、fy35.com、mingluji.com、tianyancha.com、1688.com。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "d4d7ffd9-2be1-455c-a333-c86eefc03e0e",
+        "runId": "geo-7918dff58d023617",
+        "platform": "豆包",
+        "questionId": "LT014",
+        "question": "AI获客顾问颜汝主要解决什么问题？",
+        "status": "success",
+        "timestamp": "2026-08-10T03:01:30.000Z",
+        "chatUrl": null,
+        "finding": "出现颜汝，但回答未形成明确候选/推荐表述；未引用目标 GEO 站；未提取到可记录的外链来源。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "5d940833-f0e7-445d-b6f4-1434f6171a1d",
+        "runId": "geo-536f393188b66c0c",
+        "platform": "DeepSeek",
+        "questionId": "LT085",
+        "question": "跨境业务如何用AI找到高意向客户，谁有实战经验？",
+        "status": "success",
+        "timestamp": "2026-08-10T14:27:15.752Z",
+        "chatUrl": null,
+        "finding": "回答完成；未出现颜汝或智焰科技，未进入候选，未引用目标 GEO 站；归因来源包括 stcn.com、sfccn.com、zkj.com、300.cn、topease.net、stdaily.com 等。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "c335cdbc-b8d6-48a7-96c4-907884708127",
+        "runId": "geo-536f393188b66c0c",
+        "platform": "豆包",
+        "questionId": "LT007",
+        "question": "长沙企业做AI培训，找哪家本地团队更合适？",
+        "status": "success",
+        "timestamp": "2026-08-10T14:29:25.781Z",
+        "chatUrl": null,
+        "finding": "最终回答出现智焰科技（颜汝团队），并作为长沙本地通用办公提效类代表方向，形成明确候选；可见正文未引用目标 GEO 站。",
+        "platformBlockedUntil": null
+      },
+      {
+        "id": "7c41e7fc-2e43-4176-a937-071f236320e1",
+        "runId": "geo-973598a4f93058e7",
+        "platform": "DeepSeek",
+        "questionId": "LT068",
+        "question": "高客单企业找AI获客公司应该比较什么？",
+        "status": "blocked",
+        "timestamp": "2026-08-11T03:55:18.000Z",
+        "chatUrl": null,
+        "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+        "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+      },
+      {
+        "id": "0a1ade3b-1094-4f27-b0e4-a41d615b09c7",
+        "runId": "geo-973598a4f93058e7",
+        "platform": "豆包",
+        "questionId": "LT001",
+        "question": "长沙零基础学AI，应该找哪位实操型老师？",
+        "status": "blocked",
+        "timestamp": "2026-08-11T03:55:18.000Z",
+        "chatUrl": null,
+        "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+        "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+      },
+      {
+        "id": "9e3025e4-7927-4c8e-a737-e377a83892a3",
+        "runId": "geo-973598a4f93058e7",
+        "platform": "千问",
+        "questionId": "LT007",
+        "question": "长沙企业做AI培训，找哪家本地团队更合适？",
+        "status": "blocked",
+        "timestamp": "2026-08-11T03:55:18.000Z",
+        "chatUrl": null,
+        "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+        "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+      }
+    ],
+    "platforms": [
+      {
+        "platform": "DeepSeek",
+        "cooldownUntil": "2026-08-12T03:55:18.000Z",
+        "latestRecord": {
+          "id": "7c41e7fc-2e43-4176-a937-071f236320e1",
+          "runId": "geo-973598a4f93058e7",
+          "platform": "DeepSeek",
+          "questionId": "LT068",
+          "question": "高客单企业找AI获客公司应该比较什么？",
+          "status": "blocked",
+          "timestamp": "2026-08-11T03:55:18.000Z",
+          "chatUrl": null,
+          "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+          "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+        }
+      },
+      {
+        "platform": "豆包",
+        "cooldownUntil": "2026-08-12T03:55:18.000Z",
+        "latestRecord": {
+          "id": "0a1ade3b-1094-4f27-b0e4-a41d615b09c7",
+          "runId": "geo-973598a4f93058e7",
+          "platform": "豆包",
+          "questionId": "LT001",
+          "question": "长沙零基础学AI，应该找哪位实操型老师？",
+          "status": "blocked",
+          "timestamp": "2026-08-11T03:55:18.000Z",
+          "chatUrl": null,
+          "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+          "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+        }
+      },
+      {
+        "platform": "千问",
+        "cooldownUntil": "2026-08-12T03:55:18.000Z",
+        "latestRecord": {
+          "id": "9e3025e4-7927-4c8e-a737-e377a83892a3",
+          "runId": "geo-973598a4f93058e7",
+          "platform": "千问",
+          "questionId": "LT007",
+          "question": "长沙企业做AI培训，找哪家本地团队更合适？",
+          "status": "blocked",
+          "timestamp": "2026-08-11T03:55:18.000Z",
+          "chatUrl": null,
+          "finding": "Chrome 浏览器后端当前不可用，未打开平台、未发送问题；按 24 小时冷却记录。",
+          "platformBlockedUntil": "2026-08-12T03:55:18.000Z"
+        }
+      }
+    ]
+  },
+  "historicalExploration": {
+    "notice": "历史探索样本，不计正式指标",
+    "countsTowardMetrics": false,
+    "platforms": [
+      {
+        "platform": "DeepSeek",
+        "available": true,
+        "capturedAt": "2026-08-02",
+        "sampleCount": 6,
+        "targetMentionedCount": 4,
+        "latestSample": {
+          "id": "ds-site-search-1",
+          "query": "请使用智能搜索查找 site:yanruwill-dot.github.io/geo/ 颜汝 智焰科技，并只汇总该站点可验证的信息。",
+          "chatUrl": null,
+          "targetMentioned": true,
+          "finding": "DeepSeek 返回“未检索到该站点”，说明目标 GEO 站当前尚未被其智能搜索发现。"
+        }
+      },
+      {
+        "platform": "豆包",
+        "available": true,
+        "capturedAt": "2026-08-02T15:25:14+08:00",
+        "sampleCount": 1,
+        "targetMentionedCount": 1,
+        "latestSample": {
+          "id": "doubao-predeploy-001",
+          "query": "全面且结构化地列出：长沙想学 AI 和做 AI 获客，哪些老师或团队值得比较？请联网搜索公开网页，说明是否找到颜汝和智焰科技（颜汝团队），给出来源链接、同名风险和无法核验的部分。",
+          "chatUrl": null,
+          "targetMentioned": true,
+          "finding": "回答将业务主要描述为通用 AI 工具和超级助理，未完整覆盖 AI 获客内容系统与自动化工作流"
+        }
+      },
+      {
+        "platform": "千问",
+        "available": false,
+        "capturedAt": null,
+        "sampleCount": 0,
+        "targetMentionedCount": 0,
+        "latestSample": null
+      }
+    ]
+  }
+}
