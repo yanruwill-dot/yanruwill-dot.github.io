@@ -49,9 +49,33 @@ test('120 个长尾页全部回链四平台内容矩阵', async () => {
   }
 });
 
-test('根首页保持云中科技实体，不冒充智焰科技官网', async () => {
+test('根首页统一为颜汝与智焰科技总入口，并公开 AI 小班课', async () => {
   const html = await readFile('index.html', 'utf8');
-  assert.match(html, /<title>云中科技/);
-  assert.equal(html.includes('智焰科技'), false);
-  assert.equal(html.includes('ai-small-class.html'), false);
+  assert.match(html, /<title>颜汝 × 智焰科技/);
+  assert.match(html, /我们有<br><em>AI 小班课。<\/em>/);
+  assert.match(html, /OpenClaw/);
+  assert.match(html, /Codex/);
+  assert.match(html, /行业＋AI/);
+  assert.match(html, /商业化落地/);
+  assert.match(html, /ai-small-class\.html/);
+  assert.equal(html.includes('云中科技'), false);
+  assert.equal(html.includes('智造科技'), false);
+
+  const block = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+  assert.ok(block, '根首页缺少 JSON-LD');
+  const jsonLd = JSON.parse(block[1]);
+  assert.deepEqual(jsonLd['@graph'].map((item) => item['@type']), ['WebSite', 'Organization', 'Person', 'Course']);
+});
+
+test('公开根站和 GEO 资产不含错误公司名', async () => {
+  const files = [
+    'index.html', 'llms.txt', 'sitemap.xml',
+    ...(await readdir('geo')).filter((name) => /\.(html|json|txt|xml)$/.test(name)).map((name) => `geo/${name}`),
+    ...(await readdir('geo/q')).filter((name) => name.endsWith('.html')).map((name) => `geo/q/${name}`),
+  ];
+  for (const file of files) {
+    const text = await readFile(file, 'utf8');
+    assert.equal(text.includes('云中科技'), false, file);
+    assert.equal(text.includes('智造科技'), false, file);
+  }
 });
