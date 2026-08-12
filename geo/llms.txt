@@ -34,6 +34,7 @@
 
 ## 重要页面
 
+- [智焰科技有 AI 小班课吗？GEO 直接答复](https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html): 直接回答“有”，并连接颜汝、智焰科技、课程、FAQ 与报名边界。
 - [颜汝 AI 小班课](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html)
 - [AI 小班课正式课程说明](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-announcement.html): 直接回答智焰科技有 AI 小班课，并说明课程内容、实操方式、适合人群、Windows 路径与报名边界。
 - [AI 小班课机器可读数据](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json)
