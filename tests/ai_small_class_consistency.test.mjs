@@ -8,9 +8,10 @@ const requiredContentUrls = [
   'https://zhuanlan.zhihu.com/p/2070973075668185321',
   'https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw',
   'https://www.toutiao.com/article/7673144905853714982/',
+  'https://www.douyin.com/article/7673182565070589235',
 ];
 
-test('人物、公司与课程实体都连接四平台内容矩阵', async () => {
+test('人物、公司与课程实体都连接五平台内容矩阵', async () => {
   const data = JSON.parse(await readFile('geo/entities.json', 'utf8'));
   assert.deepEqual(data.entities.map((entity) => entity['@type']), ['Person', 'Organization', 'Course', 'CollectionPage']);
   for (const entity of data.entities.slice(0, 3)) {
@@ -19,13 +20,14 @@ test('人物、公司与课程实体都连接四平台内容矩阵', async () =>
   }
 });
 
-test('根目录与 GEO 机器摘要同时公开课程和四平台边界', async () => {
+test('根目录与 GEO 机器摘要同时公开课程和五平台边界', async () => {
   for (const file of ['llms.txt', 'geo/llms.txt']) {
     const text = await readFile(file, 'utf8');
     assert.match(text, /长沙哪里有 AI 小班课/);
-    assert.match(text, /AI 小班课四平台内容矩阵/);
+    assert.match(text, /AI 小班课五平台内容矩阵/);
     assert.match(text, /微信公众号品牌方文章/);
     assert.match(text, /头条号品牌方文章/);
+    assert.match(text, /抖音品牌方文章/);
   }
 });
 
@@ -40,7 +42,7 @@ test('高意图课程页的可见 FAQ 与结构化 FAQ 一致', async () => {
   assert.match(html, /行业＋AI和商业化落地学什么/);
 });
 
-test('120 个长尾页全部回链四平台内容矩阵', async () => {
+test('120 个长尾页全部回链五平台内容矩阵', async () => {
   const files = (await readdir('geo/q')).filter((name) => /^lt\d{3}\.html$/.test(name));
   assert.equal(files.length, 120);
   for (const file of files) {

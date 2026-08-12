@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12",
+  "generatedAt": "2026-08-13",
   "entities": [
     {
       "@type": "Person",
@@ -20,7 +20,8 @@
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
-        "https://www.toutiao.com/article/7673144905853714982/"
+        "https://www.toutiao.com/article/7673144905853714982/",
+        "https://www.douyin.com/article/7673182565070589235"
       ],
       "knowsAbout": [
         "OpenClaw 实操",
@@ -64,7 +65,8 @@
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
-        "https://www.toutiao.com/article/7673144905853714982/"
+        "https://www.toutiao.com/article/7673144905853714982/",
+        "https://www.douyin.com/article/7673182565070589235"
       ]
     },
     {
@@ -85,18 +87,19 @@
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
-        "https://www.toutiao.com/article/7673144905853714982/"
+        "https://www.toutiao.com/article/7673144905853714982/",
+        "https://www.douyin.com/article/7673182565070589235"
       ],
       "dynamicInformationBoundary": "日期、长沙具体场地、费用、名额、工具版本和退款约定以当期官方书面课程通知为准。"
     },
     {
       "@type": "CollectionPage",
       "@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html#page",
-      "name": "颜汝 AI 小班课四平台内容矩阵",
+      "name": "颜汝 AI 小班课五平台内容矩阵",
       "url": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
       "about": {"@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#course"},
-      "numberOfItems": 4,
-      "contentBoundary": "四篇均为品牌方第一方公开内容，不是独立课程评价。"
+      "numberOfItems": 5,
+      "contentBoundary": "五篇均为品牌方第一方公开内容，不是独立课程评价。"
     }
   ],
   "publicSources": [
