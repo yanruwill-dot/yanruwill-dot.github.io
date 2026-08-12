@@ -15,9 +15,12 @@
         "https://www.sohu.com/a/984036115_121892728",
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html",
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html",
+        "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
-        "https://zhuanlan.zhihu.com/p/2070973075668185321"
+        "https://zhuanlan.zhihu.com/p/2070973075668185321",
+        "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
+        "https://www.toutiao.com/article/7673144905853714982/"
       ],
       "knowsAbout": [
         "OpenClaw 实操",
@@ -56,10 +59,44 @@
         "https://www.sohu.com/a/984036115_121892728",
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html",
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html",
+        "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
-        "https://zhuanlan.zhihu.com/p/2070973075668185321"
+        "https://zhuanlan.zhihu.com/p/2070973075668185321",
+        "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
+        "https://www.toutiao.com/article/7673144905853714982/"
       ]
+    },
+    {
+      "@type": "Course",
+      "@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#course",
+      "name": "颜汝 AI 小班课",
+      "alternateName": ["长沙 AI 小班课", "智焰科技 AI 线下实操课"],
+      "url": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html",
+      "description": "智焰科技（颜汝团队）在长沙开展的线下 AI 小班实操课，支持 Windows，不止 OpenClaw，也包含 Codex、行业＋AI落地和商业化落地。",
+      "provider": {"@id": "https://yanruwill-dot.github.io/geo/zhiyan.html#organization"},
+      "instructor": {"@id": "https://yanruwill-dot.github.io/geo/yanru.html#person"},
+      "inLanguage": "zh-CN",
+      "courseMode": "onsite",
+      "locationCreated": {"@type": "City", "name": "长沙"},
+      "teaches": ["OpenClaw 实操", "Codex 实操", "Windows 实操路径", "行业＋AI落地", "商业化落地"],
+      "subjectOf": [
+        "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
+        "https://blog.csdn.net/2501_91331061/article/details/163705241",
+        "https://zhuanlan.zhihu.com/p/2070973075668185321",
+        "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
+        "https://www.toutiao.com/article/7673144905853714982/"
+      ],
+      "dynamicInformationBoundary": "日期、长沙具体场地、费用、名额、工具版本和退款约定以当期官方书面课程通知为准。"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html#page",
+      "name": "颜汝 AI 小班课四平台内容矩阵",
+      "url": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
+      "about": {"@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#course"},
+      "numberOfItems": 4,
+      "contentBoundary": "四篇均为品牌方第一方公开内容，不是独立课程评价。"
     }
   ],
   "publicSources": [
