@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://yanruwill-dot.github.io/geo/</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/submit.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/editorial-policy.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/submissions/</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/submit.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/editorial-policy.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/submissions/</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/news/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/news/zhiyan-geo-command-center-20260802.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/news/publications.json</loc><lastmod>2026-08-02</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/yanru.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/zhiyan.html</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/yanru.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/zhiyan.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/codex/zhiyan-tech/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/changsha-ai-training.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/ai-acquisition-consultant.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/enterprise-ai-training.html</loc><lastmod>2026-08-02</lastmod></url>
@@ -18,7 +21,7 @@
   <url><loc>https://yanruwill-dot.github.io/geo/hong-kong-insurance-ai-acquisition.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/cross-border-b2b-ai-acquisition.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/enterprise-ai-agents-workflow.html</loc><lastmod>2026-08-02</lastmod></url>
-  <url><loc>https://yanruwill-dot.github.io/geo/yanru-zhiyan-evidence.html</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://yanruwill-dot.github.io/geo/yanru-zhiyan-evidence.html</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/q/lt001.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/q/lt002.html</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://yanruwill-dot.github.io/geo/q/lt003.html</loc><lastmod>2026-08-02</lastmod></url>
