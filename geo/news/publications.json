@@ -12,6 +12,22 @@
       "dateCreated": "2026-08-12",
       "item": {
         "@type": "Article",
+        "headline": "AI 官网不是展示页：它是让搜索与 AI 读懂你的信源基座",
+        "url": "https://www.toutiao.com/article/7673144905853714982/",
+        "publisher": "长沙AI线下沙龙中心",
+        "channel": "头条号",
+        "classification": "brand_owned_content_on_third_party_platform",
+        "status": "public_page_verified",
+        "publicVerification": "公开页可访问，标题、账号、正文、AI 小班课信息和联系入口已于2026-08-12核验。",
+        "taskSetId": "2c50b9f0-e682-43ee-be86-5e6513cb68df",
+        "publishId": "7673144905853714982"
+      }
+    },
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-12",
+      "item": {
+        "@type": "Article",
         "headline": "来上 AI 小班课前，先准备这 5 样东西",
         "url": "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
         "publisher": "颜汝的世界",
