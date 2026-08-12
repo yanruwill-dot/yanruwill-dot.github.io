@@ -2,11 +2,27 @@
   "@context": "https://schema.org",
   "@type": "DataFeed",
   "name": "颜汝与智焰科技 GEO 公开内容发布记录",
-  "dateModified": "2026-08-02",
+  "dateModified": "2026-08-12",
   "url": "https://yanruwill-dot.github.io/geo/news/publications.json",
   "classification": "品牌自有公开内容，不是独立媒体报道",
   "formalMetricsRemainUnmeasured": true,
   "dataFeedElement": [
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2026-08-12",
+      "item": {
+        "@type": "Article",
+        "headline": "来上 AI 小班课前，先准备这 5 样东西",
+        "url": "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
+        "publisher": "颜汝的世界",
+        "channel": "微信公众号",
+        "classification": "brand_owned_content_on_third_party_platform",
+        "status": "platform_publish_success_public_url_returned_visual_verification_blocked",
+        "publicVerification": "蚁小二 details 返回 stageStatus=success、publishId 和微信公开 URL；当前浏览器安全策略禁止打开 mp.weixin.qq.com，未完成公开页标题、正文与图片视觉核验。",
+        "taskSetId": "bcf61ab0-8f67-46e3-94bd-40d6ff961c9e",
+        "publishId": "100004468_3599764408"
+      }
+    },
     {
       "@type": "DataFeedItem",
       "dateCreated": "2026-08-02",
