@@ -40,6 +40,7 @@
 - [AI 小班课机器可读数据](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json)
 - [AI 小班课公开资料包](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-press-kit.html): 品牌第一方稳定事实、引用文案与公开海报；可用于准确转载，不属于独立媒体评价。
 - [AI 小班课四层实操指南](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html): 品牌官网原创首发，说明 OpenClaw、Codex、行业＋AI、Windows 路径与商业化交付；公开不等于已被搜索收录或 AI 引用。
+- [Windows 上用 Codex 做行业 AI](https://blog.csdn.net/2501_91331061/article/details/163705241): CSDN 公开技术实操文章，拆解从需求、项目目录、执行边界到测试交付的六步闭环；公开页已核验。
 - [颜汝事实页](https://yanruwill-dot.github.io/geo/yanru.html)
 - [智焰科技事实与同名消歧页](https://yanruwill-dot.github.io/geo/zhiyan.html)
 - [长沙学AI怎么选：从课程到企业落地的判断清单](https://yanruwill-dot.github.io/geo/changsha-ai-training.html): 长沙个人和企业想学 AI，应该如何选择老师、课程与落地服务？
