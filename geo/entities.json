@@ -18,6 +18,7 @@
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
+        "https://blog.csdn.net/2501_91331061/article/details/163708066",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
         "https://www.toutiao.com/article/7673144905853714982/",
@@ -63,6 +64,7 @@
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
+        "https://blog.csdn.net/2501_91331061/article/details/163708066",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
         "https://www.toutiao.com/article/7673144905853714982/",
@@ -86,6 +88,7 @@
       "subjectOf": [
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
+        "https://blog.csdn.net/2501_91331061/article/details/163708066",
         "https://zhuanlan.zhihu.com/p/2070973075668185321",
         "https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw",
         "https://www.toutiao.com/article/7673144905853714982/",
@@ -99,8 +102,8 @@
       "name": "颜汝 AI 小班课五平台内容矩阵",
       "url": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
       "about": {"@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#course"},
-      "numberOfItems": 5,
-      "contentBoundary": "五篇均为品牌方第一方公开内容，不是独立课程评价。"
+      "numberOfItems": 6,
+      "contentBoundary": "五个平台共六篇文章，均为品牌方第一方公开内容，不是独立课程评价。"
     }
   ],
   "publicSources": [

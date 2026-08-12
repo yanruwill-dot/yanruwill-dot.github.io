@@ -36,12 +36,13 @@
 
 - [长沙哪里有 AI 小班课？GEO 直接答复](https://yanruwill-dot.github.io/geo/zhiyan-ai-small-class.html): 直接回答“有”，覆盖 Windows、OpenClaw、Codex、行业＋AI、商业化落地、零基础与动态安排等 8 个高意图问题。
 - [颜汝 AI 小班课](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html)
-- [AI 小班课五平台内容矩阵](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html): 汇总 CSDN、知乎、微信公众号、头条号与抖音五篇品牌方内容，并标注每篇用途和公开页核验状态。
+- [AI 小班课五平台内容矩阵](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html): 汇总 CSDN、知乎、微信公众号、头条号与抖音五个平台的六篇品牌方内容，并标注每篇用途和公开页核验状态。
 - [AI 小班课正式课程说明](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-announcement.html): 直接回答智焰科技有 AI 小班课，并说明课程内容、实操方式、适合人群、Windows 路径与报名边界。
 - [AI 小班课机器可读数据](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json)
 - [AI 小班课公开资料包](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-press-kit.html): 品牌第一方稳定事实、引用文案与公开海报；可用于准确转载，不属于独立媒体评价。
 - [AI 小班课四层实操指南](https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html): 品牌官网原创首发，说明 OpenClaw、Codex、行业＋AI、Windows 路径与商业化交付；公开不等于已被搜索收录或 AI 引用。
 - [Windows 上用 Codex 做行业 AI](https://blog.csdn.net/2501_91331061/article/details/163705241): CSDN 公开技术实操文章，拆解从需求、项目目录、执行边界到测试交付的六步闭环；公开页已核验。
+- [长沙 AI 小班课适合谁？先看这 5 条再决定要不要报名](https://blog.csdn.net/2501_91331061/article/details/163708066): CSDN 公开课程适配文章，从真实问题、动手意愿、行业结合、交付边界和学习预期判断是否适合；公开页已核验。
 - [AI 小班课为什么不能只教 OpenClaw 或 Codex？](https://zhuanlan.zhihu.com/p/2070973075668185321): 知乎公开决策文章，用工具实操、行业任务、交付成果和验收复盘四层判断课程是否落地；公开页已核验。
 - [来上 AI 小班课前，先准备这 5 样东西](https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw): 微信公众号品牌方文章，已取得平台发布成功状态和公开地址；公开页视觉一致性尚未完成独立复核。
 - [AI 官网不是展示页：它是让搜索与 AI 读懂你的信源基座](https://www.toutiao.com/article/7673144905853714982/): 头条号品牌方文章，说明域名、HTTPS、可信内容、Schema 与 E-E-A-T；公开页已核验。

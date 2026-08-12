@@ -5,6 +5,7 @@ import test from 'node:test';
 const requiredContentUrls = [
   'https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html',
   'https://blog.csdn.net/2501_91331061/article/details/163705241',
+  'https://blog.csdn.net/2501_91331061/article/details/163708066',
   'https://zhuanlan.zhihu.com/p/2070973075668185321',
   'https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw',
   'https://www.toutiao.com/article/7673144905853714982/',
