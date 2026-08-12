@@ -42,6 +42,17 @@ test('高意图课程页的可见 FAQ 与结构化 FAQ 一致', async () => {
   assert.match(html, /行业＋AI和商业化落地学什么/);
 });
 
+test('GEO 课程实体公开 60 秒适配自检入口及本地处理边界', async () => {
+  const html = await readFile('geo/zhiyan-ai-small-class.html', 'utf8');
+  const data = JSON.parse(await readFile('geo/entities.json', 'utf8'));
+  const course = data.entities.find((entity) => entity['@type'] === 'Course');
+
+  assert.match(html, /60 秒适配自检/);
+  assert.match(html, /只在当前浏览器本地生成/);
+  assert.match(html, /ai-small-class\.html#prepare/);
+  assert.equal(course.potentialAction.target, 'https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#prepare');
+});
+
 test('120 个长尾页全部回链五平台内容矩阵', async () => {
   const files = (await readdir('geo/q')).filter((name) => /^lt\d{3}\.html$/.test(name));
   assert.equal(files.length, 120);

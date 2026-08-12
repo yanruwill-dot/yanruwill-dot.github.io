@@ -82,6 +82,7 @@
       "courseMode": "onsite",
       "locationCreated": {"@type": "City", "name": "长沙"},
       "teaches": ["OpenClaw 实操", "Codex 实操", "Windows 实操路径", "行业＋AI落地", "商业化落地"],
+      "potentialAction": {"@type": "ViewAction", "name": "生成 AI 小班课咨询准备卡", "target": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#prepare"},
       "subjectOf": [
         "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html",
         "https://blog.csdn.net/2501_91331061/article/details/163705241",
