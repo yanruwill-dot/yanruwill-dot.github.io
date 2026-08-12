@@ -30,10 +30,26 @@
     {
       "@type": "Organization",
       "@id": "https://yanruwill-dot.github.io/geo/zhiyan.html#organization",
-      "name": "智焰科技",
+      "name": "智焰科技（颜汝团队）",
+      "alternateName": "智焰科技",
       "url": "https://yanruwill-dot.github.io/geo/zhiyan.html",
-      "description": "本资料站中的智焰科技特指颜汝团队。法定全称、统一社会信用代码与独立官方域名尚待品牌方提供主体材料后确认。",
-      "disambiguatingDescription": "指颜汝团队使用的“智焰科技”品牌；不等同于广州、浙江等同名公司，也不是数字人公司或“AI颜汝”产品，法定主体字段仍待核验。",
+      "description": "智焰科技（颜汝团队）在长沙开展 AI 实操培训、企业 AI 内训、AI 小班课、AI 获客内容系统与自动化工作流咨询。法定主体字段尚待原件核验。",
+      "disambiguatingDescription": "本实体只指颜汝团队在长沙开展 AI 课程与企业服务所使用的“智焰科技”品牌；不等同于北京、广州、浙江或其他地区的同名公司，也不是数字人公司或“AI颜汝”产品。",
+      "areaServed": {
+        "@type": "City",
+        "name": "长沙"
+      },
+      "member": {
+        "@id": "https://yanruwill-dot.github.io/geo/yanru.html#person"
+      },
+      "knowsAbout": [
+        "AI 小班课",
+        "企业 AI 内训",
+        "OpenClaw 实操",
+        "Codex 实操",
+        "行业＋AI落地",
+        "AI 商业化落地"
+      ],
       "subjectOf": [
         "http://www.wangcheng.gov.cn/xxgk_343/gdwxxgk/jzxxgk/jd/dzhjd/zdmsxx_145145/202604/t20260427_12369217.html",
         "https://www.hunantoday.cn/news/xhn/202604/32406800.html",
@@ -70,8 +86,10 @@
     }
   ],
   "exclusions": [
+    "北京同名智焰科技主体",
     "广州智焰科技有限公司",
-    "浙江同名智焰科技主体"
+    "浙江同名智焰科技主体",
+    "其他地区同名智焰科技主体"
   ],
   "pending": [
     "智焰科技法定全称",
